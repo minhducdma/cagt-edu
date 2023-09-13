@@ -1,0 +1,17 @@
+name: Auto Test when Push Code to Branch
+
+on: push
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Run test
+        run: |
+          yarn install
+          yarn lint
+          yarn test

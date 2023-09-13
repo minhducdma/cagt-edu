@@ -1,0 +1,19 @@
+name: Auto Test when Pull Request to All Branch
+
+on:
+  pull_request:
+    types: [assigned, opened, synchronize, reopened]
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Run test
+        run: |
+          yarn install
+          yarn lint
+          yarn test
