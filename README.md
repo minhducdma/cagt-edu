@@ -48,23 +48,23 @@ npm test
 
 We use CommitLint to enforce commit message conventions. Please follow the guidelines below when writing commit messages:
 
-• Use the present tense ("add feature" instead of "added feature")
-• Use the imperative mood ("fix bug" instead of "fixed bug")
-• Limit the first line to 72 characters or less
-• Separate the subject from the body with a blank line
-• Capitalize the subject line
-• Do not end the subject line with a period
-• Use the body to explain what and why vs. how
+- Use the present tense ("add feature" instead of "added feature")
+- Use the imperative mood ("fix bug" instead of "fixed bug")
+- Limit the first line to 72 characters or less
+- Separate the subject from the body with a blank line
+- Capitalize the subject line
+- Do not end the subject line with a period
+- Use the body to explain what and why vs. how
 
 Here are the types of commit messages that we use:
 
-• feat: A new feature
-• fix: A bug fix
-• docs: Documentation changes
-• style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
-• refactor: A code change that neither fixes a bug nor adds a feature
-• test: Adding missing tests or correcting existing tests
-• chore: Changes to the build process or auxiliary tools and libraries such as documentation generation
+- feat: A new feature
+- fix: A bug fix
+- docs: Documentation changes
+- style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+- refactor: A code change that neither fixes a bug nor adds a feature
+- test: Adding missing tests or correcting existing tests
+- chore: Changes to the build process or auxiliary tools and libraries such as documentation generation
 
 Here is an example of a good commit message:
 
