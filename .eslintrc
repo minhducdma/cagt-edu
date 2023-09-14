@@ -1,14 +1,10 @@
 {
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "react", "react-native", "prettier"],
+  "plugins": ["@typescript-eslint", "react", "react-native", "prettier", "jest"],
   "extends": [
-    "plugin:@typescript-eslint/recommended",
-    "plugin:react/recommended",
-    "plugin:react-native/all",
+    "@react-native-community",
     "prettier",
-    "eslint:recommended",
-    "plugin:import/errors",
-    "plugin:import/warnings"
+    "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
     "prettier/prettier": "error",
@@ -16,7 +12,7 @@
     "no-logical-assignment-operators": ["off"],
     "no-unused-vars": "warn",
     "no-console": "warn",
-    "import/order": "error",
+    "import/order": "off",
     "import/namespace": "off",
     "indent": ["error", 2],
     "quotes": ["error", "single"]
