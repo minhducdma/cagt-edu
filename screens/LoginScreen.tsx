@@ -1,24 +1,21 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import LoginSVG from '@/assets/misc/login.svg';
 
-export default function App() {
+const LoginScreen = () => {
   return (
     <View style={styles.container}>
-      <Text>Hello world!</Text>
-      <StatusBar style="auto" />
+      <LoginSVG width={300} height={300} />
+      <Text>Login Screen</Text>
     </View>
   );
-}
-
-const colors = {
-  white: '#fff',
 };
 
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
-    backgroundColor: colors.white,
     flex: 1,
     justifyContent: 'center',
   },
 });
+
+export default LoginScreen;

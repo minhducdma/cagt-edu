@@ -7,10 +7,8 @@
   "eslint.validate": [
     "javascript",
     "javascriptreact",
-    "typescript",
-    "typescriptreact"
   ],
   "prettier.singleQuote": true, 
   "prettier.trailingComma": "all", 
-  "prettier.printWidth": 80 
+  "prettier.printWidth": 80,
 }
