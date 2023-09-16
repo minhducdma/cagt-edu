@@ -1,6 +1,12 @@
 {
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "react", "react-native", "prettier", "jest"],
+  "plugins": [
+    "@typescript-eslint",
+    "react",
+    "react-native",
+    "prettier",
+    "jest"
+  ],
   "extends": [
     "@react-native-community",
     "prettier",
@@ -11,7 +17,7 @@
     "react/react-in-jsx-scope": "off",
     "no-logical-assignment-operators": ["off"],
     "no-unused-vars": "warn",
-    "no-console": "warn",
+    "no-console": ["warn", { "allow": ["error"] }],
     "import/order": "off",
     "import/namespace": "off",
     "indent": ["error", 2],

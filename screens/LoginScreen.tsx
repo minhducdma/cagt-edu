@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View } from 'react-native';
-import LoginSVG from '../assets/misc/login.svg';
+import LoginSVG from '@/assets/misc/login.svg';
 
 const LoginScreen = () => {
   return (
