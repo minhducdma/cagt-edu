@@ -1,11 +1,9 @@
 import { StyleSheet, Text, View } from 'react-native';
-import LoginSVG from '@/assets/misc/login.svg';
 
-const LoginScreen = () => {
+const Signup = () => {
   return (
     <View style={styles.container}>
-      <LoginSVG width={300} height={300} />
-      <Text>Login Screen</Text>
+      <Text>SignUp Screen</Text>
     </View>
   );
 };
@@ -18,4 +16,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default LoginScreen;
+export default Signup;
