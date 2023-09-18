@@ -4,6 +4,10 @@
 
 CAGT EDU is a mobile application built with TypeScript, JavaScript, NPM, and React.
 
+## Requirement
+
+Node 16 version or newly
+
 ## Installation
 
 To install the project, you need to install Node.js and NPM on your computer. Then, you can run the following command to install the dependencies:
