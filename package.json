@@ -32,6 +32,7 @@
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
     "@expo/vector-icons": "^13.0.0",
+    "@react-native-community/cli-server-api": "^11.3.8",
     "@react-native-community/eslint-config": "^3.2.0",
     "@react-native/metro-config": "^0.72.11",
     "@react-navigation/native": "^6.1.7",
