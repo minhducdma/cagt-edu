@@ -29,7 +29,7 @@ const Login = ({ navigation }) => {
               color: COLORS.black,
             }}
           >
-            Chào mừng bạn trở lại ! 👋
+            Chào mừng bạn ! 👋
           </Text>
 
           <Text
