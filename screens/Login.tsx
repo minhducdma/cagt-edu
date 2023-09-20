@@ -12,6 +12,7 @@ import {
   Image,
 } from 'react-native';
 import Button from '@/components/ui/Button';
+import $t from '@/i18n';
 
 const Login = ({ navigation }) => {
   const [isPasswordShown, setIsPasswordShown] = useState(false);
@@ -29,7 +30,7 @@ const Login = ({ navigation }) => {
               color: COLORS.black,
             }}
           >
-            Chào mừng bạn ! 👋
+            {$t('loginPage.welcome')} 👋
           </Text>
 
           <Text
@@ -38,7 +39,7 @@ const Login = ({ navigation }) => {
               color: COLORS.black,
             }}
           >
-            Đăng nhập ngay để không bỏ lỡ bất kì điều gì bạn nhé!
+            {$t('loginPage.welcomeMessage')}
           </Text>
         </View>
 
@@ -50,7 +51,7 @@ const Login = ({ navigation }) => {
               marginVertical: 8,
             }}
           >
-            Địa chỉ email
+            {$t('loginPage.emailLabel')}
           </Text>
 
           <View
@@ -66,7 +67,7 @@ const Login = ({ navigation }) => {
             }}
           >
             <TextInput
-              placeholder="Nhập địa chỉ email"
+              placeholder={$t('loginPage.inputEmail')}
               placeholderTextColor={COLORS.black}
               keyboardType="email-address"
               style={{
@@ -84,7 +85,7 @@ const Login = ({ navigation }) => {
               marginVertical: 8,
             }}
           >
-            Mật khẩu
+            {$t('loginPage.passwordLabel')}
           </Text>
 
           <View
@@ -100,7 +101,7 @@ const Login = ({ navigation }) => {
             }}
           >
             <TextInput
-              placeholder="Nhập mật khẩu"
+              placeholder={$t('loginPage.inputPassword')}
               placeholderTextColor={COLORS.black}
               secureTextEntry={isPasswordShown}
               style={{
@@ -137,11 +138,11 @@ const Login = ({ navigation }) => {
             color={isChecked ? COLORS.primary : undefined}
           />
 
-          <Text>Lưu tài khoản</Text>
+          <Text>{$t('loginPage.saveAccount')}</Text>
         </View>
 
         <Button
-          title="Đăng nhập"
+          title={$t('loginPage.loginLink')}
           filled
           style={{
             marginTop: 18,
@@ -164,7 +165,7 @@ const Login = ({ navigation }) => {
               marginHorizontal: 10,
             }}
           />
-          <Text style={{ fontSize: 14 }}>Hoặc đăng nhập bằng</Text>
+          <Text style={{ fontSize: 14 }}>{$t('loginPage.orLabel')}</Text>
           <View
             style={{
               flex: 1,
@@ -205,7 +206,7 @@ const Login = ({ navigation }) => {
               resizeMode="contain"
             />
 
-            <Text>Facebook</Text>
+            <Text>{$t('loginPage.facebookButton')}</Text>
           </TouchableOpacity>
 
           <TouchableOpacity
@@ -232,7 +233,7 @@ const Login = ({ navigation }) => {
               resizeMode="contain"
             />
 
-            <Text>Google</Text>
+            <Text>{$t('loginPage.googleButton')}</Text>
           </TouchableOpacity>
         </View>
 
@@ -244,7 +245,7 @@ const Login = ({ navigation }) => {
           }}
         >
           <Text style={{ fontSize: 16, color: COLORS.black }}>
-            Bạn chưa có tài khoản ?{' '}
+            {$t('loginPage.haveAccountLabel')}
           </Text>
           <Pressable onPress={() => navigation.navigate('Signup')}>
             <Text
@@ -255,7 +256,7 @@ const Login = ({ navigation }) => {
                 marginLeft: 6,
               }}
             >
-              Đăng ký ngay
+              {$t('loginPage.signUpNow')}
             </Text>
           </Pressable>
         </View>

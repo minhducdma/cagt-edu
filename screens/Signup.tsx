@@ -12,6 +12,7 @@ import {
   Text,
   Image,
 } from 'react-native';
+import $t from '@/i18n';
 
 const Signup = ({ navigation }) => {
   const [isPasswordShown, setIsPasswordShown] = useState(false);
@@ -28,7 +29,7 @@ const Signup = ({ navigation }) => {
               color: COLORS.black,
             }}
           >
-            Tạo tài khoản
+            {$t('signupPage.createAccount')}
           </Text>
 
           <Text
@@ -37,7 +38,7 @@ const Signup = ({ navigation }) => {
               color: COLORS.black,
             }}
           >
-            Kết nối với chúng tôi!
+            {$t('signupPage.connectWithUs')}
           </Text>
         </View>
 
@@ -49,7 +50,7 @@ const Signup = ({ navigation }) => {
               marginVertical: 8,
             }}
           >
-            Địa chỉ email
+            {$t('signupPage.emailLabel')}
           </Text>
 
           <View
@@ -65,7 +66,7 @@ const Signup = ({ navigation }) => {
             }}
           >
             <TextInput
-              placeholder="Nhập địa chỉ email"
+              placeholder={$t('signupPage.inputEmail')}
               placeholderTextColor={COLORS.black}
               keyboardType="email-address"
               style={{
@@ -83,7 +84,7 @@ const Signup = ({ navigation }) => {
               marginVertical: 8,
             }}
           >
-            Số điện thoại
+            {$t('signupPage.phoneLabel')}
           </Text>
 
           <View
@@ -100,7 +101,7 @@ const Signup = ({ navigation }) => {
             }}
           >
             <TextInput
-              placeholder="+91"
+              placeholder="+84"
               placeholderTextColor={COLORS.black}
               keyboardType="numeric"
               style={{
@@ -112,7 +113,7 @@ const Signup = ({ navigation }) => {
             />
 
             <TextInput
-              placeholder="Nhập số điện thoại"
+              placeholder={$t('signupPage.inputPhone')}
               placeholderTextColor={COLORS.black}
               keyboardType="numeric"
               style={{
@@ -130,7 +131,7 @@ const Signup = ({ navigation }) => {
               marginVertical: 8,
             }}
           >
-            Password
+            {$t('signupPage.passwordLabel')}
           </Text>
 
           <View
@@ -146,7 +147,7 @@ const Signup = ({ navigation }) => {
             }}
           >
             <TextInput
-              placeholder="Nhập mật khẩu"
+              placeholder={$t('signupPage.inputPassword')}
               placeholderTextColor={COLORS.black}
               secureTextEntry={isPasswordShown}
               style={{
@@ -183,11 +184,11 @@ const Signup = ({ navigation }) => {
             color={isChecked ? COLORS.primary : undefined}
           />
 
-          <Text>Tôi đồng ý với tất cả điều khoản</Text>
+          <Text>{$t('signupPage.agreeLabel')}</Text>
         </View>
 
         <Button
-          title="Đăng ký"
+          title={$t('signupPage.signupButton')}
           filled
           style={{
             marginTop: 18,
@@ -210,7 +211,7 @@ const Signup = ({ navigation }) => {
               marginHorizontal: 10,
             }}
           />
-          <Text style={{ fontSize: 14 }}>Hoặc đăng nhập bằng</Text>
+          <Text style={{ fontSize: 14 }}>{$t('signupPage.orLabel')}</Text>
           <View
             style={{
               flex: 1,
@@ -251,7 +252,7 @@ const Signup = ({ navigation }) => {
               resizeMode="contain"
             />
 
-            <Text>Facebook</Text>
+            <Text>{$t('signupPage.facebookButton')}</Text>
           </TouchableOpacity>
 
           <TouchableOpacity
@@ -278,7 +279,7 @@ const Signup = ({ navigation }) => {
               resizeMode="contain"
             />
 
-            <Text>Google</Text>
+            <Text>{$t('signupPage.googleButton')}</Text>
           </TouchableOpacity>
         </View>
 
@@ -290,7 +291,7 @@ const Signup = ({ navigation }) => {
           }}
         >
           <Text style={{ fontSize: 16, color: COLORS.black }}>
-            Bạn đã có tài khoản ?
+            {$t('signupPage.haveAccountLabel')}
           </Text>
           <Pressable onPress={() => navigation.navigate('Login')}>
             <Text
@@ -301,7 +302,7 @@ const Signup = ({ navigation }) => {
                 marginLeft: 6,
               }}
             >
-              Đăng nhập
+              {$t('signupPage.loginLink')}
             </Text>
           </Pressable>
         </View>

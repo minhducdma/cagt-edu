@@ -1,6 +1,7 @@
 import { View, Image, Text, Pressable } from 'react-native';
 import Button from '@/components/ui/Button';
 import COLORS from '@/constants/theme-constants';
+import $t from '@/i18n';
 
 const Welcome = ({ navigation }) => {
   return (
@@ -88,7 +89,7 @@ const Welcome = ({ navigation }) => {
             color: COLORS.white,
           }}
         >
-          Chào mừng đến với
+          {$t('welcomePage.welcome')}
         </Text>
         <Text
           style={{
@@ -108,7 +109,7 @@ const Welcome = ({ navigation }) => {
               marginVertical: 4,
             }}
           >
-            Phần mềm hỗ trợ học sinh, sinh viên hàng đầu
+            {$t('welcomePage.welcomeMessage')}
           </Text>
           <Text
             style={{
@@ -116,12 +117,12 @@ const Welcome = ({ navigation }) => {
               color: COLORS.white,
             }}
           >
-            Việt Nam
+            {$t('welcomePage.vietnam')}
           </Text>
         </View>
 
         <Button
-          title="Tham gia ngay"
+          title={$t('welcomePage.loginNow')}
           onPress={() => navigation.navigate('Signup')}
           style={{
             marginTop: 22,
@@ -142,7 +143,7 @@ const Welcome = ({ navigation }) => {
               color: COLORS.white,
             }}
           >
-            Bạn đã có tài khoản ?
+            {$t('welcomePage.noAccount')}
           </Text>
           <Pressable onPress={() => navigation.navigate('Login')}>
             <Text
@@ -153,7 +154,7 @@ const Welcome = ({ navigation }) => {
                 marginLeft: 4,
               }}
             >
-              Đăng nhập
+              {$t('welcomePage.loginButton')}
             </Text>
           </Pressable>
         </View>
