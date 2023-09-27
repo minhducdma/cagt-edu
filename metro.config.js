@@ -1,33 +1,8 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const { getDefaultConfig, mergeConfig } = require('@react-native/metro-config');
+const { getDefaultConfig } = require('expo/metro-config');
 
-/**
- * Metro configuration
- * https://facebook.github.io/metro/docs/configuration
- *
- * @type {import('metro-config').MetroConfig}
- */
-const config = async () => {
-  const defaultConfig = await getDefaultConfig(__dirname);
-  const {
-    resolver: { sourceExts, assetExts },
-  } = defaultConfig;
+const config = getDefaultConfig(__dirname);
 
-  return mergeConfig(defaultConfig, {
-    transformer: {
-      babelTransformerPath: require.resolve('react-native-svg-transformer'),
-      getTransformOptions: async () => ({
-        transform: {
-          experimentalImportSupport: false,
-          inlineRequires: true,
-        },
-      }),
-    },
-    resolver: {
-      assetExts: assetExts.filter((ext) => ext !== 'svg'),
-      sourceExts: [...sourceExts, 'svg'],
-    },
-  });
-};
+config?.watcher?.additionalExts?.push('mjs', 'cjs');
 
 module.exports = config;

@@ -2,9 +2,12 @@ import React, { ReactNode } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Login, Signup, Welcome } from '@/screens/Index';
-import ErrorBoundary from '@/components/ErrorBoundary';
+import ErrorBoundary from '@/shared/components/ErrorBoundary';
+import { usePushNotifications } from '@/shared/hooks/usePushNotifications';
 
 const App: () => ReactNode = () => {
+  const { expoPushToken } = usePushNotifications();
+  console.log(expoPushToken);
   const Stack = createNativeStackNavigator();
   return (
     <React.StrictMode>

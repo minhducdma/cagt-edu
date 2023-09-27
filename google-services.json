@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "316529606753",
+    "project_id": "expo-cagt-edu",
+    "storage_bucket": "expo-cagt-edu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316529606753:android:038e4aebe999269be22a20",
+        "android_client_info": {
+          "package_name": "com.cagt.cagtedu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKhaMEAIYSq2t79e4C5AVnGCAtbwe1I8U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
