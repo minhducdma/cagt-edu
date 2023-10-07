@@ -40,6 +40,7 @@
     "@react-native-community/cli-server-api": "^11.3.8",
     "@react-native-community/eslint-config": "^3.2.0",
     "@react-native/metro-config": "^0.72.11",
+    "@react-navigation/bottom-tabs": "^6.5.9",
     "@react-navigation/native": "^6.1.7",
     "@react-navigation/native-stack": "^6.9.13",
     "@tsconfig/react-native": "^3.0.2",
