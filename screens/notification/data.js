@@ -1,0 +1,42 @@
+export const Notifications = [
+  {
+    id: 5,
+    text: 'Dummy text 1',
+    desc: 'Có thông báo mới kìa vô xem đi thằng ngu để nhăcs nữa vỡ mồm',
+    img: 'hero3.jpg',
+    time: '1 giờ',
+    isStatus: 1,
+  },
+  {
+    id: 6,
+    text: 'Dummy text 2',
+    desc: 'Có thông báo mới kìa vô xem đi thằng ngu để nhăcs nữa vỡ mồm',
+    img: 'hero3.jpg',
+    time: '1 giờ',
+    isStatus: 0,
+  },
+  {
+    id: 7,
+    text: 'Dummy text 3',
+    desc: 'Có thông báo mới kìa vô xem đi thằng ngu để nhăcs nữa vỡ mồm',
+    img: 'hero3.jpg',
+    time: '1 giờ',
+    isStatus: 1,
+  },
+  {
+    id: 8,
+    text: 'Dummy text 4',
+    desc: 'Có thông báo mới kìa vô xem đi thằng ngu để nhăcs nữa vỡ mồm',
+    img: 'hero3.jpg',
+    time: '1 giờ',
+    isStatus: 0,
+  },
+  {
+    id: 9,
+    text: 'Dummy text 5',
+    desc: 'Có thông báo mới kìa vô xem đi thằng ngu để nhăcs nữa vỡ mồm',
+    img: 'hero3.jpg',
+    time: '1 giờ',
+    isStatus: 0,
+  },
+];
