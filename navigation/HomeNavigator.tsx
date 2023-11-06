@@ -3,6 +3,7 @@ import { Home } from '@/screens/home/Index';
 import { Note } from '@/screens/note/Index';
 import { Library } from '@/screens/library/Index';
 import { TimeTable } from '@/screens/time-table/Index';
+import { Notification } from '@/screens/notification/Index';
 import COLORS from '@/constants/theme-constants';
 import { StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
@@ -61,6 +62,13 @@ const HomeNavigator = () => {
         component={TimeTable}
         options={{
           tabBarIcon: (props) => renderTabBarIcon(props, 'time'),
+        }}
+      />
+      <Tabs.Screen
+        name="Notification"
+        component={Notification}
+        options={{
+          tabBarIcon: (props) => renderTabBarIcon(props, 'notifications'),
         }}
       />
     </Tabs.Navigator>
